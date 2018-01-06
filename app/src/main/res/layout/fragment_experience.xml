@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="abdulhamid.dev.gmail.com.curiculumvitae.ExperienceFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <TableLayout
+            android:id="@+id/tableExperience"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_alignStart="@+id/textView5">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                        android:id="@+id/imgEduc1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_public_black_24dp"
+                        tools:layout_editor_absoluteY="129dp"
+                        tools:layout_editor_absoluteX="16dp" />
+
+                    <TextView
+                        android:id="@+id/titleEdu1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="PT.GLOBAL INTERMEDIA NUSANTARA"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        tools:layout_editor_absoluteY="129dp"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView4"
+                        android:layout_marginStart="8dp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp">
+                <ImageView
+                    android:id="@+id/imgEduc2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_work_black_24dp"
+                    tools:layout_editor_absoluteY="129dp"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <TextView
+                    android:id="@+id/titleEdu2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="WEB CENTRALLAUNDRY.CO.ID"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    tools:layout_editor_absoluteY="129dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView4"
+                    android:layout_marginStart="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_work_black_24dp" />
+
+                <TextView
+                    android:id="@+id/titleEdu3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    tools:layout_editor_absoluteY="129dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView4"
+                    android:layout_marginStart="8dp"
+                    android:text="WEB KUISIONER KAB.SUKOHARJO" />
+            </TableRow>
+
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_public_black_24dp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="BACKEND WEB CAHAYASLIPPER"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+            </TableRow>
+        </TableLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="MY EXPERIENCE"
+        android:textAlignment="center"
+        android:textColor="@color/textAbout"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="35dp"
+        android:text="Juli - September 2014"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/tableExperience" />
+    <TextView
+        android:id="@+id/txt_ket2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="September 2016"
+        android:layout_below="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/txt_ket3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="September 2014"
+        android:layout_below="@+id/txt_ket2"
+        android:layout_alignStart="@+id/txt_ket2" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_ket3"
+        android:layout_below="@+id/txt_ket3"
+        android:layout_marginTop="35dp"
+        android:text="Maret 2017" />
+
+
+</RelativeLayout>

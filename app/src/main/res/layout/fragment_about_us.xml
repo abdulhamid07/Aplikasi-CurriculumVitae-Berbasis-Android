@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context="abdulhamid.dev.gmail.com.curiculumvitae.AboutUsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        app:srcCompat="@drawable/profile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:id="@+id/txtNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="32dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="ABDUL HAMID H" />
+    <LinearLayout
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/txtAlamat"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="#212121"
+            android:text="Alamat" />
+        <TextView
+            android:id="@+id/txtJekel"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="#212121"
+            android:text="Jenis Kelamin" />
+        <TextView
+            android:id="@+id/txtLahir"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="#212121"
+            android:text="Lahir" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="80dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/textAbout"
+            android:text="Bambanglipuro, Bantul, DIY" />
+        <TextView
+            android:id="@+id/jekel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/textAbout"
+            android:text="Laki-laki" />
+        <TextView
+            android:id="@+id/lahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/textAbout"
+            android:text="Bantul, 23 Januari 1997" />
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/tableLayout">
+
+    </TableLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_contacts_black_24dp"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:layout_alignBottom="@+id/contact" />
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="48dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:fontFamily="monospace"
+        android:text="CONTACT ME :" />
+    <ImageView
+        android:id="@+id/imgFacebook"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignStart="@+id/tableLayout"
+        android:layout_alignTop="@+id/tableLayout"
+        android:layout_marginTop="48dp"
+        app:srcCompat="@drawable/facebook" />
+
+    <TextView
+        android:id="@+id/txtFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgFacebook"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/imgFacebook"
+        android:text="Abdul Hamid"
+        android:textColor="@color/textAbout"
+        android:textSize="17sp" />
+    <ImageView
+        android:id="@+id/imgIg"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        app:srcCompat="@drawable/ig"
+        android:layout_alignTop="@+id/imgFacebook"
+        android:layout_toEndOf="@+id/txtFacebook"
+        android:layout_marginLeft="8dp"
+        android:layout_above="@+id/imgGmail" />
+
+    <TextView
+        android:id="@+id/txtIg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtFacebook"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@+id/imgIg"
+        android:text="abdulham.id"
+        android:textColor="@color/textAbout"
+        android:textSize="17sp"
+        android:layout_alignTop="@+id/txtFacebook" />
+
+    <ImageView
+        android:id="@+id/imgGmail"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignStart="@+id/imgFacebook"
+        android:layout_below="@+id/imgFacebook"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/gmail" />
+
+    <TextView
+        android:id="@+id/txtGmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtFacebook"
+        android:layout_alignTop="@+id/imgGmail"
+        android:layout_marginTop="4dp"
+        android:text="abdulhamid.dev@gmail.com"
+        android:textAllCaps="false"
+        android:textColor="@color/textAbout"
+        android:textSize="14sp"
+        android:layout_alignEnd="@+id/txtFacebook" />
+
+    <ImageView
+        android:id="@+id/imgWa"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignBottom="@+id/txtGmail"
+        android:layout_alignStart="@+id/imgIg"
+        android:layout_alignTop="@+id/imgGmail"
+        android:layout_alignLeft="@id/imgIg"
+        android:layout_toEndOf="@id/txtGmail"
+        app:srcCompat="@drawable/wa" />
+
+    <TextView
+        android:id="@+id/txtWa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtIg"
+        android:layout_alignTop="@+id/txtGmail"
+        android:text="085363283137"
+        android:textColor="@color/textAbout"
+        android:layout_toEndOf="@id/imgWa"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp" />
+
+</RelativeLayout>
